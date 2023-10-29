@@ -1,6 +1,22 @@
-heading-banner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+.heading-banner{
+    
+    
+    
+    
 }
+
+.Nav-Banner-ele{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid #e62121;
+    margin-top: 10px;
+}
+
+#Logo{
+    float: left;
+    padding: 10px;
+    width: 80px;
+    height: 125px;
+    border: 2px solid #e62121;
+}
+

@@ -2,7 +2,10 @@ import "./Content.css";
 
  function Content() {
   return (
-    <div>content</div>
+    <content>
+      <div>
+      </div>
+    </content>
   )
 }
 

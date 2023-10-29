@@ -10,10 +10,6 @@ function Nav() {
 
       <div className="profile-container">
         <a href="#">
-
-
-
-
         </a>
 
 

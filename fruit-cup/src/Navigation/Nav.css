@@ -1,9 +1,13 @@
 nav {
     display: flex;
-    border-bottom: 2px solid #f3f3f3;
-    justify-content: space-around;
+    border-bottom: 5px solid #f3f3f3;
+    justify-content: right;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     z-index: 999;
     margin-left: 2rem;
+}
+
+.nav-container{
+    align-items: right;
 }
