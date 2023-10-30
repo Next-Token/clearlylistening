@@ -8,7 +8,7 @@ function Nav() {
           type="text" className="search-input" placeholder="Enter your search shoes." />
       </div>
 
-      <div className="profile-container">
+      <div className="fruit-container">
         <a href="#">
         </a>
 
