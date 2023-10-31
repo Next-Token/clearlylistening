@@ -4,8 +4,10 @@
     display: flex;    
     justify-content: center;
     color: aqua;
+    width: 100%;
     
 }
+
 
 div{
     background-color: rgb(161, 60, 60);

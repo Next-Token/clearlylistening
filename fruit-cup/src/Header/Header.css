@@ -1,6 +1,5 @@
 .heading-banner{
-    
-    
+
     
     
 }
@@ -15,10 +14,9 @@
 
 #Logo{
     float: left;
-    padding: 10px;
+    padding: 1px;
     width: 100px;
-    height: 150px;
-    border: 2px solid #e62121;
-    background-color: chartreuse;
+    height: 130px;
+    background-color: rgb(172, 159, 159);
 }
 
