@@ -2,9 +2,10 @@
     color:rgb(126, 18, 214);
     background-color: bisque;
     text-align: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -263.025px;
     
 
 

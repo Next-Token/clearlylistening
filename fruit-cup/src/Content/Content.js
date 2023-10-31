@@ -3,8 +3,7 @@ import "./Content.css";
  function Content() {
   return (
     <content>
-      
-      
+
       
       <div className="Title">
         <h1>
