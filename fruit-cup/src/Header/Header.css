@@ -10,6 +10,7 @@
     justify-content: space-evenly;
     border: 2px solid #e62121;
     margin-top: 10px;
+    background-color: aquamarine;
 }
 
 #Logo{
@@ -18,5 +19,6 @@
     width: 100px;
     height: 150px;
     border: 2px solid #e62121;
+    background-color: chartreuse;
 }
 

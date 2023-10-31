@@ -2,7 +2,16 @@ import "./Activity.css"
 
  function Activity() {
   return (
-    <div>Activity</div>
+    <act>
+      <div className="Topic">
+        
+
+
+
+
+      </div>
+      
+    </act>
   )
 }
 
