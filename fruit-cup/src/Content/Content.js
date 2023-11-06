@@ -16,8 +16,14 @@ import "./Content.css";
       </br>
       <div className="body">
         <h2>
-          Welcome! 
+          What we do:
         </h2>
+        <p>
+          Fruit-cup is a group of software
+          developers providing services for
+          businessess and individuals that do not
+          want to waste their time at work.
+        </p>
 
 
         <div className="Daily">
