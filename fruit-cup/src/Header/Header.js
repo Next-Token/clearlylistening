@@ -1,5 +1,7 @@
 import "./Header.css";
 
+var fruityloop="https://thefruitbasket.s3.amazonaws.com/FruitLogo.png"
+
 const handleClick = () => {
   console.log('hewwo wold');
 }
@@ -8,7 +10,7 @@ function Header() {
   return (
     <heading>
         <div className="heading-banner" >
-            <img id="Logo" src="https://thefruitbasket.s3.amazonaws.com/FruitLogo.png" />
+            <img id="Logo" src={fruityloop} />
             <div className="Nav-Banner-ele">
               
             <button onClick={handleClick}><h1 id="Nav1">Home</h1></button>
