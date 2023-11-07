@@ -1,8 +1,5 @@
 import "./Header.css";
 
-var fruity = "https://thefruitbasket.s3.amazonaws.com/FruitLogo.png"
-
-
 const handleClick = () => {
   console.log('hewwo wold');
 }
