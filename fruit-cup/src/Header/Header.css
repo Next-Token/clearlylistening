@@ -6,24 +6,24 @@
 
 .Nav-Banner-ele{
     display: flex;
-    justify-content: space-evenly;
-    border: 2px solid #e62121;
+    justify-content: flex-end;
+    border: 2px solid #e621dc;
     margin-top: 10px;
-    background-color: aquamarine;
 }
 
 #Logo{
     float: left;
     padding: 1px;
     width: 100px;
-    height: 130px;
+    height: 124px;
     background-color: rgb(172, 159, 159);
 }
 
 button{
 
-    color:green;
-    background-color:  yellowgreen;
-    width: 3000px;
+    color: white;
+    background-color:  #f1356d;
+    width: 200px;
+    border-radius: 15px;
 
 }

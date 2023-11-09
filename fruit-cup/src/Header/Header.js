@@ -7,10 +7,14 @@ const handleClick = () => {
 }
 
 function Header() {
+  
+  
+  
+  
   return (
     <heading>
         <div className="heading-banner" >
-            <img id="Logo" src={fruityloop} />
+            <img id="Logo" src={fruityloop} alt="fruitcup"/>
             <div className="Nav-Banner-ele">
               
             <button onClick={handleClick}><h1 id="Nav1">Home</h1></button>
