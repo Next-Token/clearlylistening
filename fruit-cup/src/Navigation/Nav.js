@@ -1,5 +1,5 @@
 import "./Nav.css";
-//import icons from '../icons/*';
+//import icons from '../icons/*';   
 import ICONS from '../index.js';
 
 
@@ -10,9 +10,7 @@ function Nav() {
 
   return (
     <nav>
-
-
-<marquee scrollamount="3" behavior="scroll" direction="left">
+<marquee scrollamount="3" behavior="scroll" direction="left" >  
       <div className="nav-container">
       
         <img src={ ICONS.apple } className="fruit" alt="apple" />
@@ -28,10 +26,8 @@ function Nav() {
         <img src={ ICONS.strawberry } className="fruit" alt="strawberry" />
        
       </div>
-
-
-        </marquee>
-        
+      </marquee>
+      
       <input type="text" className="search-input" placeholder="Enter fruit name here"  hidden/>
       
         

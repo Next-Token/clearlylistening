@@ -5,15 +5,11 @@ nav {
     z-index: 999;
     margin-left: 2rem;
     background-color: rgb(75, 75, 167);
-    
 }
 
 .nav-container{
     width: 100%;
     display: flex;
-    
-
-
 }
 .search-input{
     width: 25%;
