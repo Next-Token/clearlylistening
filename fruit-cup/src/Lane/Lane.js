@@ -3,23 +3,41 @@ import { fruit } from '../db/data'
 import { getFruitBall } from '../Util/Util'
 
 let left = 0;
-const dist = 500;
+const dist = 100;
+const start=-1180;
 const fruitloop = document.querySelector('.bowling');
+let count = 0;
 
 function bowl(){
 
-    left +=5;
-    fruitloop.style.transform = `translateX(${left}px)`;
-
-
-
-    if(left !== dist){
-        requestAnimationFrame(bowl);
+    if (count %2 == 0){ // go right
+        left +=5;
+        fruitloop.style.transform = `translateX(${left}px)`;
+        if (left <= dist){
+            requestAnimationFrame(bowl);
+        }
+        else{
+            count+=1;
+            bowl();
+        }
     }
-    else if(left == dist){
-        
-    fruitloop.style.transform = `translateX(0px)`;
+    else{ //go left
+
+        left -=5;
+        fruitloop.style.transform = `translateX(${left}px)`;
+        if (left >= start){            
+            requestAnimationFrame(bowl);
+        }
+        else{
+            count+=1;
+            bowl();
+        }
+
     }
+
+
+
+  
 
 }
 
@@ -38,6 +56,7 @@ function Lane() {
     </li>
     
     );
+    bowl();
 
     return <ul> { listed } </ul>;
 
