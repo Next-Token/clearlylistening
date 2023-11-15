@@ -6,7 +6,7 @@ import { getFruitBall } from '../Util/Util'
 function Lane() {
   const listed = fruit.map(ball =>
     <li key={ball.id}>
-        <img src={getFruitBall(ball)} alt={ball.name}
+        <img src={getFruitBall(ball)} alt={ball.name} className='bowling'
         />
     </li>
     );

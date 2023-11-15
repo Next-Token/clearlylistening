@@ -9,15 +9,19 @@ nav {
 
 .nav-container{
     width: 100%;
-    display: flex;
-}
-.search-input{
-    width: 25%;
+    
 }
 
-.nav-container .fruit{
+
+.bowling{
     width: 40px;
-    margin-right: 110px;
-
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: unset;
+    margin: unset;
 }
 
