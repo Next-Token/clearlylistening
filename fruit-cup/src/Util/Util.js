@@ -2,7 +2,7 @@ import React from 'react'
 import ICONS from '../index.js';
 
 export function getFruitBall(ball){
-    return( 'https://thefruitbasket.s3.amazonaws.com/' + ball.name + '.png');
+    return( ball.name + '.png');
 }
 
  function Util() {
