@@ -4,7 +4,8 @@ import Activity from "./Activity/Activity";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Test from "./Testing/Test";
-
+import Lane from "./Lane/Lane";
+//<Test/>
 function App() {
 
 
@@ -13,9 +14,9 @@ function App() {
   return <>
   <Header />
   <Navigation />
+  <Lane />
   <Content />
   <Activity />
-  <Test/>
 
   
   <Footer />
