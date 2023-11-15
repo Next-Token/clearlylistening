@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import DropdownMenu from '../components/ddm';
 import ICONS from '../index.js';
+import "./Test.css"
 
 export default function Test() {
 
@@ -21,7 +22,7 @@ export default function Test() {
   return (
     <test>
         <div classname="temp" onMouseOver={ handleHover } onMouseLeave={ handleExit }>
-        <img src={ ICONS.banana }/>
+        <img classname="menu" src={ ICONS.menu } alt="menu"/>
           {/* <DropdownMenu /> */}
           {disp && <DropdownMenu />}
     

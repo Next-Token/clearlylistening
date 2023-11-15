@@ -17,7 +17,8 @@ const ICONS = {
     orange:require('./icons/orange.png'),
     pear:require('./icons/pear.png'),
     pepper:require('./icons/pepper.png'),
-    strawberry:require('./icons/strawberry.png')
+    strawberry:require('./icons/strawberry.png'),
+    menu:require('./icons/menu.png')
 }
 
 

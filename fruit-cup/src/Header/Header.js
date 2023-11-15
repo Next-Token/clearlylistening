@@ -1,4 +1,6 @@
 import "./Header.css";
+import Test from "../Testing/Test";
+
 
 var fruityloop="https://thefruitbasket.s3.amazonaws.com/FruitLogo.png"
 
@@ -17,10 +19,8 @@ function Header() {
             <img id="Logo" src={fruityloop} alt="fruitcup"/>
             <div className="Nav-Banner-ele">
               
-            <button onClick={handleClick}><h1 id="Nav1">Home</h1></button>
-            <button><h1 id="Nav2">About</h1></button>
-            <button><h1 id="Nav3">Seth</h1></button>
-            <button><h1 id="Nav4">Projects</h1></button>
+              <Test/>
+
 
             </div>
         </div>
