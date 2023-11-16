@@ -20,7 +20,7 @@ div .body{
     white-space: pre-line;
 }
 
-.Daily{
+.Daily2{
     border: 4px solid #f0eeed;
     background-color: rgb(16, 184, 72);
     display: flex;
@@ -33,8 +33,32 @@ div .body{
 }
 
 
-.body .Daily{
+.body .Daily2{
 
     margin-left: 80%;
 
 }
+
+.profile-pic{
+    width: 125px;
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 90%;
+    
+}
+.top{
+    height:200px;
+}
+#pp {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+
+  .Resume{
+    background-color: white;
+    margin-left: 1in;
+    margin-right: 1in;
+  }

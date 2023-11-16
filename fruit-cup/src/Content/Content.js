@@ -1,4 +1,5 @@
 import "./Content.css";
+//import Pdf from "../Document/Document.pdf"  <a href = {Pdf} target="_blank">Download Pdf</a>
 
  function Content() {
   return (
@@ -16,29 +17,38 @@ import "./Content.css";
       </br>
       <div className="body">
         <h2>
-          What we do:
+          In-Summary:
         </h2>
         <p>
-          Fruit-cup is a group of software
-          developers providing services for
-          businessess and individuals that do not
-          want to waste their time at work.
+          Fruit-cup is yummy.    
         </p>
 
 
-        <div className="Daily">
-          <p> testing</p>
-
-
-
-
-
-        </div>
+       
         
 
 
         
       </div>
+
+<div className="Resume">
+  <div className="top">
+  <div className="profile-pic">
+          <img src= 'fruitboy.png' id="pp"/>
+    </div>
+      <h1>Seth Serpas</h1>
+ 
+
+
+    
+
+   </div>
+
+
+
+
+</div>
+
     </content>
   )
 }

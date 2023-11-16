@@ -6,7 +6,7 @@ function Footer() {
         <div>
 
         <h4 className="foot">
-        This site is run, created, and maintained by Seth Serpas ALL BY HIMSELF!
+        This site is run, created, and maintained by Seth Serpas!
         </h4>
 
 
