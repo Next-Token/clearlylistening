@@ -4,8 +4,8 @@ import { getFruitBall } from '../Util/Util'
 
 let left = 0;
 const dist = 100;
-const start=-1180;
-const fruitloop = document.querySelector('.bowling');
+const start=-180;
+const fruitloop = document.querySelector('.bowl');
 let count = 0;
 
 function bowl(){
@@ -32,22 +32,11 @@ function bowl(){
             count+=1;
             bowl();
         }
-
     }
-
-
-
-  
 
 }
 
 function Lane() {
-
-
-
-    
-
-
 
   const listed = fruit.map(ball =>
     <li key={ball.id}>
@@ -56,7 +45,6 @@ function Lane() {
     </li>
     
     );
-    bowl();
 
     return <ul> { listed } </ul>;
 

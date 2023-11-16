@@ -11,8 +11,8 @@
     float: left;
     padding: 1px;
     width: 100px;
-    height: 140px;
-    background-color: rgb(172, 159, 159);
+    height: 190px;
+    background-color: rgba(172, 159, 159, 0.329);
 }
 
 button{
