@@ -31,23 +31,6 @@ import "./Content.css";
         
       </div>
 
-<div className="Resume">
-  <div className="top">
-  <div className="profile-pic">
-          <img src= 'fruitboy.png' id="pp"/>
-    </div>
-      <h1>Seth Serpas</h1>
- 
-
-
-    
-
-   </div>
-
-
-
-
-</div>
 
     </content>
   )

@@ -1,0 +1,24 @@
+
+.profile-pic{
+    width: 125px;
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 90%;
+    
+}
+.top{
+    height:200px;
+}
+#pp {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+
+  .Resume{
+    background-color: white;
+    margin-left: 1in;
+    margin-right: 1in;
+  }
