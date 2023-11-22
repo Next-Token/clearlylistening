@@ -2,13 +2,20 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
+
 
 }
 #menu:hover{
 
   background: gray;
-  cursor: pointer;
+  cursor:alias;
   color: #fff;
+}
 
+
+
+li#menu{
+  float: inline-start;
 }
