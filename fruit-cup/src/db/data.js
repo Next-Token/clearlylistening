@@ -1,7 +1,7 @@
 export const fruit =[{
     id: 0,
     name: 'apple',
-    selected: true},
+    selected: false},
     {
     id: 1,
     name: 'banana',

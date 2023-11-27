@@ -10,12 +10,21 @@ export function getFruitWall(ball){
   if (ball.selected == true){
   return('/' + ball.name + '.png');
   }
+  else
+    return (false);
 }
 
 
 export function setFruitWall(ball){
 
-  return (true);
+if (ball.selected != ball.selected)
+  {
+  
+  return (ball.selected = true);}
+  else
+  {
+    return (ball.selected = false);
+  }
 }
 
 /*

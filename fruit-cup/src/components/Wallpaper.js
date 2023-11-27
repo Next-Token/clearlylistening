@@ -13,10 +13,11 @@ import { getFruitWall } from '../Util/Util'
   backgroundRepeat: 'repeat', 
   width: '100%', 
   height:'100%',
-  margin: '.4px',
-  padding: '3px',
+  margin: '.2px',
+  padding: '1px',
   zIndex:'999999',
-  position:'absolute'}}>
+  position:'absolute'  
+  }}>
 </div>
 
 
