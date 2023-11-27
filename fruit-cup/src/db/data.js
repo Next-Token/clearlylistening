@@ -1,28 +1,37 @@
 export const fruit =[{
     id: 0,
-    name: 'apple'},
+    name: 'apple',
+    selected: true},
     {
     id: 1,
-    name: 'banana'},
+    name: 'banana',
+    selected: false},
     {
     id: 2,
-    name: 'cherry'},
+    name: 'cherry',
+    selected: false},
     {
     id: 3,
-    name: 'grape'},	
+    name: 'grape',
+    selected: false},	
     {
     id: 4,
-    name: 'lamon'},	
+    name: 'lamon',
+    selected: false},	
     {
     id: 5,
-    name: 'orange'},
+    name: 'orange',
+    selected: false},
     {
     id: 6,
-    name: 'pear'},
+    name: 'pear',
+    selected: false},
     {
     id: 7,
-    name: 'pepper'},
+    name: 'pepper',
+    selected: false},
     {
     id: 8,
-    name: 'strawberry'}
+    name: 'strawberry',
+    selected: false}
      ]

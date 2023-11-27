@@ -1,6 +1,9 @@
 import React from 'react'
 import { fruit } from '../db/data'
 import { getFruitBall } from '../Util/Util'
+import { getFruitWall } from '../Util/Util'
+
+import { setFruitWall } from '../Util/Util'
 
 let left = 0;
 const dist = 100;
@@ -40,7 +43,7 @@ function Lane() {
 
   const listed = fruit.map(ball =>
     <li key={ball.id}>
-        <img src={getFruitBall(ball)} alt={ball.name} className='bowling'
+        <img src={getFruitBall(ball)} alt={ball.name} className='bowling' onClick={setFruitWall(ball)}
         />
     </li>
     

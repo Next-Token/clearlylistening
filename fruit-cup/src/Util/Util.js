@@ -6,6 +6,18 @@ export function getFruitBall(ball){
 }
 
 
+export function getFruitWall(ball){
+  if (ball.selected == true){
+  return('/' + ball.name + '.png');
+  }
+}
+
+
+export function setFruitWall(ball){
+
+  return (true);
+}
+
 /*
 export function mDBConn(){
 

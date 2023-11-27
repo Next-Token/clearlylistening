@@ -5,6 +5,9 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Test from "./Testing/Test";
 import Lane from "./Lane/Lane";
+import "./App.css"
+import Wallpaper from "./components/Wallpaper";
+
 
 
 //<Test/> <Content />
@@ -14,11 +17,17 @@ function App() {
 
   
   return <>
+ 
   <Header />
   <Navigation />
-  
-  <Activity />
 
+
+  <Wallpaper>
+  <Activity />
+<p>trtretregeqargb</p>
+  
+  
+  </Wallpaper>
   
   <Footer />
   </>
