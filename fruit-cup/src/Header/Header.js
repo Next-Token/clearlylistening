@@ -19,7 +19,7 @@ function Header() {
             <img id="Logo" src={fruityloop} alt="fruitcup"/>
             <div className="Nav-Banner-ele">
               
-              <Test/>
+      
 
 
             </div>

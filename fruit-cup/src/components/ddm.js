@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const DropdownMenu = () => {
   
@@ -6,11 +7,13 @@ const DropdownMenu = () => {
   
   
   return (
-      <ul className="Header-List">
-        <li id="menu">Home</li>
-        <li id="menu">About</li>
-        <li id="menu">Projects</li>
-      </ul>
+    <div className="dropdown-menu">
+  
+        <button className="dropdown-item">Home</button>
+        <button className="dropdown-item">About</button>
+       <button className="dropdown-item">Projects</button>
+    
+      </div>
   );
 };
 

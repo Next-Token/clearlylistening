@@ -21,23 +21,7 @@ export default function Test() {
 
   return (
     <test>
-        <div classname="temp" onMouseOver={ handleHover } onMouseLeave={ handleExit }>
-        <img classname="menu" src={ ICONS.menu } alt="menu"/>
-          {/* <DropdownMenu /> */}
-          {disp && <DropdownMenu />}
-    
-            
-            
-            
-            
-            
-        </div>
-
-
-
     </test>
-
-
   )
 }
 
