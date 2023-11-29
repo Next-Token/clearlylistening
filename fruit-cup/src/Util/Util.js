@@ -17,14 +17,11 @@ export function getFruitWall(ball){
 
 export function setFruitWall(ball){
 
-if (ball.selected != ball.selected)
-  {
-  
-  return (ball.selected = true);}
-  else
-  {
-    return (ball.selected = false);
-  }
+
+
+    ball.selected = false;
+
+
 }
 
 /*
