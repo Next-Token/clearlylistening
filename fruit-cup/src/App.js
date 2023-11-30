@@ -21,12 +21,8 @@ function App() {
   <Navigation />
 
 
-  <Wallpaper>
   <Activity />
-<p>trtretregeqargb</p>
-  
-  
-  </Wallpaper>
+
   
   <Footer />
   </>

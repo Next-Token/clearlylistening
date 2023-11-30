@@ -1,5 +1,6 @@
 import React from 'react'
 import ICONS from '../index.js';
+import Wallpaper from '../components/Wallpaper.js';
 
 export function getFruitBall(ball){
     return( ball.name + '.png');
@@ -7,7 +8,7 @@ export function getFruitBall(ball){
 
 
 export function getFruitWall(ball){
-  if (ball.selected == true){
+  if (ball.selected === false){
   return('/' + ball.name + '.png');
   }
   else
@@ -17,9 +18,38 @@ export function getFruitWall(ball){
 
 export function setFruitWall(ball){
 
+  console.log('made it here');
+  if(ball.id===0 ){
+    return (ball.selected = true);
+  }
+  if (ball.id===1){
+    return (ball.selected = true);
+  }
+  if (ball.id===2 ){
+    return (ball.selected = true);
+  }
+  if(ball.id===3 ){
+    return (ball.selected = true);
+  }
+  if (ball.id===4 ){
+    return (ball.selected = true);
+  }
+  if (ball.id===5){
+    return (ball.selected = true);
+  }
+  if(ball.id===6){
+    return (ball.selected = true);
+  }
+  if (ball.id===7){
+    return (ball.selected = true);
+  }
+  if (ball.id===8){
+    console.log({ball})
+    return <Wallpaper {...ball}/>;
+  }
 
 
-    ball.selected = false;
+   
 
 
 }

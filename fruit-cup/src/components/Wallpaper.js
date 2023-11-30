@@ -3,7 +3,7 @@ import { fruit } from '../db/data'
 import { getFruitWall } from '../Util/Util'
 
 
- function Wallpaper() {
+ function Wallpaper(ball) {
 
 
 
