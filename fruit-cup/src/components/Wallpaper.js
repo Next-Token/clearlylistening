@@ -1,31 +1,32 @@
 import React from 'react'
-import { fruit } from '../db/data'
+
 import { getFruitWall } from '../Util/Util'
+import { fruitMap } from '../db/data'
 
 
- function Wallpaper(ball) {
+const Wallpaper = (props) => {
+  
+  const selected = props.selected;
+
+  console.log('wallp');
+console.log(props,selected);
+console.log(';');
 
 
 
-    const source = fruit.map(ball =>
-<div style={{ 
-  backgroundImage: `url(${getFruitWall(ball)})`, 
-  backgroundRepeat: 'repeat', 
-  width: '100%', 
-  height:'100%',
-  margin: '.2px',
-  padding: '1px',
-  zIndex:'999999',
-  position:'absolute'  
-  }}>
-</div>
+//const test = <img src={path} alt='2' />
 
 
-        );
 
 
   return (
-    <div>{source}</div>
+    <div >
+
+
+<img src={selected.path} alt='2'/>
+
+
+    </div>
   )
 }
 
