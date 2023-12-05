@@ -21,7 +21,7 @@ function App() {
  
   <Header />
   <Navigation />
-  <Wallpaper selected={selected}/>
+
   <Activity />
 
   

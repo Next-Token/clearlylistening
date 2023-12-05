@@ -13,7 +13,6 @@ function Nav() {
        
       </div>
 
-      <input type="text" className="search-input" placeholder="Enter fruit name here"  hidden/>
     </nav>
   );
 }
