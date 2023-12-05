@@ -6,6 +6,8 @@ import { apple } from  '../Util/Util'
 
 import { useState } from 'react';
 
+import { fruitMap } from '../db/data'
+
 import { setFruitWall } from '../Util/Util'
 import Wallpaper from '../components/Wallpaper'
 
@@ -109,9 +111,17 @@ export function Selc(a){
 
 function Lane() {
 
+    const selected = fruitMap.get(Selc());
+
+    console.log('here');
+    console.log(selected);
+    console.log('APP.JS');
+
 
     const handleApple = () => {
         Selc(0);
+        
+        
         console.log('apple');
         
     }
