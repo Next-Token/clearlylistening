@@ -1,6 +1,6 @@
 import React from 'react'
 import ICONS from '../index.js';
-import Wallpaper from '../components/Wallpaper.js';
+
 
 export function getFruitBall(ball){
     return( ball.name + '.png');

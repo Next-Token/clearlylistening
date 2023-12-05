@@ -9,7 +9,6 @@ import { useState } from 'react';
 import { fruitMap } from '../db/data'
 
 import { setFruitWall } from '../Util/Util'
-import Wallpaper from '../components/Wallpaper'
 import { render } from '@testing-library/react'
 
 let CUR =0;
