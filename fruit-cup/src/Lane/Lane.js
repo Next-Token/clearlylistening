@@ -1,14 +1,5 @@
 import React from 'react'
-import { fruit } from '../db/data'
-import { getFruitBall } from '../Util/Util'
-import { getFruitWall } from '../Util/Util'
-import { apple } from  '../Util/Util'
-
-import { useState } from 'react';
-
 import { fruitMap } from '../db/data'
-
-import { setFruitWall } from '../Util/Util'
 import { render } from '@testing-library/react'
 
 let CUR =0;
@@ -118,9 +109,7 @@ function Lane() {
     const handleApple = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('apple');        
 render(<div id='column' style={{ 
         backgroundImage: `url(./apple.png)`, 
@@ -136,14 +125,12 @@ render(<div id='column' style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('nana');
+        console.log('apple-Style');
     }
     const handleBanana = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('banana');
         
 render(<div style={{ 
@@ -157,17 +144,16 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('nana');
+        console.log('banana-Style');
 }
 
 
     const handleCherry = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+        
         console.log('cherry');
+        
         
 render(<div style={{ 
         backgroundImage: `url(./cherry.png)`, 
@@ -180,14 +166,12 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('nana');
+        console.log('cherry-Style');
     }
     const handlegrape = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('grape');
         
 render(<div style={{ 
@@ -201,14 +185,11 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('nana');
-    }
+        console.log('grape-Style');    }
     const handlelamon = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('lamon');
         
 render(<div style={{ 
@@ -222,14 +203,11 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('lamon');
-    }
+        console.log('lamon-Style');}
     const handlemellon = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('mellon');
         
 render(<div style={{ 
@@ -243,14 +221,11 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('nana');
-    }
+        console.log('mellon-Style');    }
     const handleorange = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('orange');
         
 render(<div style={{ 
@@ -264,14 +239,12 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('orange');
+        console.log('orange-Style');
     }
     const handlepear = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('pear');
         
 render(<div style={{ 
@@ -285,14 +258,12 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('pear');
+        console.log('pear-Style');
     }
     const handlepepper = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('pepper');
         
 render(<div style={{ 
@@ -306,14 +277,12 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('pepper');
+        console.log('pepper-Style');
     }
     const handlestrawberry = () => {
         count=count+1;
         let adjust = Offset * count;
-        console.log(selected);
-        selected=Selc(1);
-        console.log(selected);
+
         console.log('strawberry');
         
 render(<div style={{ 
@@ -327,7 +296,7 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('strawberry');
+        console.log('strawberry-Style');
         
     }
 
