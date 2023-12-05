@@ -34,3 +34,7 @@ nav {
     margin: unset;
 }
 
+html{
+    height:100%;
+    overflow: hidden;
+}

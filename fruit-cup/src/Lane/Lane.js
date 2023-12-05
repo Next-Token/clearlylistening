@@ -10,8 +10,11 @@ import { fruitMap } from '../db/data'
 
 import { setFruitWall } from '../Util/Util'
 import Wallpaper from '../components/Wallpaper'
+import { render } from '@testing-library/react'
 
 let CUR =0;
+let Count=0;
+let Offset=69;
 
 
 let left = 0;
@@ -111,91 +114,259 @@ export function Selc(a){
 
 function Lane() {
 
-    const selected = fruitMap.get(Selc());
-
-    console.log('here');
-    console.log(selected);
-    console.log('APP.JS');
-
+    let selected = fruitMap.get(Selc());
 
     const handleApple = () => {
-        Selc(0);
-        
-        
-        console.log('apple');
-        
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
+        console.log('apple');        
+render(<div id='column' style={{ 
+        backgroundImage: `url(./apple.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        marginTop: '10px',
+        marginLeft: '20px',
+        opacity: '33%',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
+        console.log('nana');
     }
     const handleBanana = () => {
-        Selc(1);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
         console.log('banana');
-    }
+        
+render(<div style={{ 
+        backgroundImage: `url(./banana.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
+        console.log('nana');
+}
+
+
     const handleCherry = () => {
-        Selc(2);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
         console.log('cherry');
+        
+render(<div style={{ 
+        backgroundImage: `url(./cherry.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
+        console.log('nana');
     }
     const handlegrape = () => {
-        Selc(3);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
         console.log('grape');
+        
+render(<div style={{ 
+        backgroundImage: `url(./grape.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
+        console.log('nana');
     }
     const handlelamon = () => {
-        Selc(4);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
+        console.log('lamon');
+        
+render(<div style={{ 
+        backgroundImage: `url(./lamon.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
         console.log('lamon');
     }
     const handlemellon = () => {
-        Selc(5);;
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
         console.log('mellon');
+        
+render(<div style={{ 
+        backgroundImage: `url(./mellon.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
+        console.log('nana');
     }
     const handleorange = () => {
-        Selc(6);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
+        console.log('orange');
+        
+render(<div style={{ 
+        backgroundImage: `url(./orange.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
         console.log('orange');
     }
     const handlepear = () => {
-        Selc(7);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
+        console.log('pear');
+        
+render(<div style={{ 
+        backgroundImage: `url(./pear.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
         console.log('pear');
     }
     const handlepepper = () => {
-        Selc(8);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
+        console.log('pepper');
+        
+render(<div style={{ 
+        backgroundImage: `url(./pepper.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
         console.log('pepper');
     }
     const handlestrawberry = () => {
-        Selc(9);
+        count=count+1;
+        let adjust = Offset * count;
+        console.log(selected);
+        selected=Selc(1);
+        console.log(selected);
         console.log('strawberry');
+        
+render(<div style={{ 
+        backgroundImage: `url(./strawberry.png)`, 
+        backgroundRepeat: 'repeat-y', 
+        width: '100%', 
+        height:'100%',
+        margin: '.2px',
+        padding: '1px',
+        zIndex:'999999',
+        left: `${adjust}px`,
+        position:'absolute'  }}> </div>);       
+        console.log(count);
+        console.log('strawberry');
+        
     }
 
-  
+  console.log(selected);
+  console.log('fional');
     return <ul>
         <li>
-            <img src='/apple.png' alt='0' className='bowling' onMouseDown={ handleApple }/>
-        </li>
-        <li >
-            <img src='/banana.png' alt='1' className='bowling' onMouseDown={ handleBanana }/>
+            <img src='/apple.png' alt='0' className='bowling' onMouseDown={handleApple} />
         </li>
         <li>
-            <img src='/cherry.png' alt='2' className='bowling'  onMouseDown={ handleCherry }/>
-        </li>
-        <li >
-            <img src='/grape.png' alt='3' className='bowling'  onMouseDown={ handlegrape }/>
+            <img src='/banana.png' alt='1' className='bowling' onMouseDown={handleBanana} />
         </li>
         <li>
-            <img src='/lamon.png' alt='4' className='bowling'  onMouseDown={ handlelamon }/>
-        </li>
-        <li >
-            <img src='/mellon.png' alt='5' className='bowling'  onMouseDown={ handlemellon }/>
+            <img src='/cherry.png' alt='2' className='bowling' onMouseDown={handleCherry} />
         </li>
         <li>
-            <img src='/orange.png' alt='6' className='bowling'  onMouseDown={ handleorange }/>
-        </li>
-        <li >
-            <img src='/pear.png' alt='7' className='bowling'  onMouseDown={ handlepear }/>
+            <img src='/grape.png' alt='3' className='bowling' onMouseDown={handlegrape} />
         </li>
         <li>
-            <img src='/pepper.png' alt='8' className='bowling'  onMouseDown={ handlepepper }/>
+            <img src='/lamon.png' alt='4' className='bowling' onMouseDown={handlelamon} />
         </li>
-        <li >
-            <img src='/strawberry.png' alt='9' className='bowling'  onMouseDown={ handlestrawberry }/>
+        <li>
+            <img src='/mellon.png' alt='5' className='bowling' onMouseDown={handlemellon} />
+        </li>
+        <li>
+            <img src='/orange.png' alt='6' className='bowling' onMouseDown={handleorange} />
+        </li>
+        <li>
+            <img src='/pear.png' alt='7' className='bowling' onMouseDown={handlepear} />
+        </li>
+        <li>
+            <img src='/pepper.png' alt='8' className='bowling' onMouseDown={handlepepper} />
+        </li>
+        <li>
+            <img src='/strawberry.png' alt='9' className='bowling' onMouseDown={handlestrawberry} />
         </li>
 
-        </ul>;
+    </ul>;
 
 }
 
