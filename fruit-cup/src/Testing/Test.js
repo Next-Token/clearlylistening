@@ -2,26 +2,31 @@ import React from 'react'
 import { useState } from 'react';
 import DropdownMenu from '../components/ddm';
 import ICONS from '../index.js';
-import "./Test.css"
+import "./Test.css";
+
 
 export default function Test() {
 
 
 
-    const [disp, setDisp] = useState(true);
+    const [disp, slide] = useState(true);
 
 
     const handleHover = () => {
-      setDisp(true);
+      slide(true);
+      
+      console.log('slide down');
     }
     const handleExit = () => {
-      setDisp(false);
+      slide(false);
+      console.log('slide up');
     }
-    // onMouseOver={ handleHover } onMouseLeave={ handleExit }
 
   return (
-    <test>
-    </test>
+      <h2 id='test2' 
+      onMouseOver={ handleHover } onMouseLeave={ handleExit }>↓</h2>
+     
+
   )
 }
 

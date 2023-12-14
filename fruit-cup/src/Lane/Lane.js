@@ -103,19 +103,25 @@ export function Selc(a){
 }
 
 
-function Lane() {
+function Lane() { 
+    // full page width ~ 30 fruit
+    // want handle 31st fruit click  (show hidden fruit? unlocks login page)
+    // need sidebar still 
 
     let selected = fruitMap.get(Selc());
+
+    
 
     const handleApple = () => {
         count=count+1;
         let adjust = Offset * count;
 
-        console.log('apple');        
-render(<div id='column' style={{ 
+        console.log('apple');   
+        if(count <=30){     
+render(<div id='column' classname={count} style={{ 
         backgroundImage: `url(./apple.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -126,7 +132,11 @@ render(<div id='column' style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('apple-Style');
+        console.log('apple-Style');}
+        else{
+
+            console.log('full');
+        }
     }
     const handleBanana = () => {
         count=count+1;
@@ -137,7 +147,7 @@ render(<div id='column' style={{
 render(<div style={{ 
         backgroundImage: `url(./banana.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '73px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -162,7 +172,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./cherry.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -184,7 +194,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./grape.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -205,7 +215,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./lamon.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -226,7 +236,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./mellon.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -247,7 +257,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./orange.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -269,7 +279,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./pear.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -291,7 +301,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./pepper.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
@@ -313,7 +323,7 @@ render(<div style={{
 render(<div style={{ 
         backgroundImage: `url(./strawberry.png)`, 
         backgroundRepeat: 'repeat-y', 
-        width: '100%', 
+        width: '80px', 
         height:'100%',
         margin: '.2px',
         marginTop: '10px',
