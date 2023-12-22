@@ -7,13 +7,16 @@ const DropdownMenu = () => {
   
   
   return (
-    <div className="dropdown-menu">
-  
-        <button className="dropdown-item">Home</button>
-        <button className="dropdown-item">About</button>
-       <button className="dropdown-item">Projects</button>
+    <div className='traverse'>
     
-      </div>
+    
+    <button className='btns' >Home</button>
+    <button className='btns' >Blog</button>
+    <button className='btns' >Youtube</button>
+    <button className='btns' >GitHub</button>
+
+
+    </div>
   );
 };
 

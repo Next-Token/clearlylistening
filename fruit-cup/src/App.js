@@ -3,6 +3,7 @@ import Activity from "./Activity/Activity";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Test from "./Testing/Test";
+import Content from "./Content/Content";
 
 
 //<Test/> <Content />
@@ -13,8 +14,8 @@ function App() {
  
   <Header />
   <Navigation />
+  <Content/>
   <Activity />
-  <Test />
   <Footer />
   </>
 }

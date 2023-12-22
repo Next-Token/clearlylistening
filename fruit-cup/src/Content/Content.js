@@ -1,7 +1,9 @@
 import "./Content.css";
+import DropdownMenu from "../components/ddm";
 //import Pdf from "../Document/Document.pdf"  <a href = {Pdf} target="_blank">Download Pdf</a>
 
  function Content() {
+  //transform: rotate(90deg);
   return (
     <content>
 
@@ -13,23 +15,12 @@ import "./Content.css";
       </div>
 
 
-      <br>
-      </br>
-      <div className="body">
-        <h2>
-          In-Summary:
-        </h2>
-        <p>
-          Fruit-cup is yummy.    
-        </p>
+      <DropdownMenu/>
 
 
        
         
 
-
-        
-      </div>
 
 
     </content>
