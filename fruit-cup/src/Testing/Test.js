@@ -5,7 +5,7 @@ import ICONS from '../index.js';
 import "./Test.css";
 
 
-export default function Test() {
+function Test() {
 
 
 
@@ -22,12 +22,18 @@ export default function Test() {
       console.log('slide up');
     }
 
-  return (
-      <h2 id='test2' 
-      onMouseOver={ handleHover } onMouseLeave={ handleExit }>↓</h2>
-     
+  return ( <div className='traverse'>
+    
+    
+      <button className='btns' >Home</button>
+      <button className='btns' >Blog</button>
+      <button className='btns' >Youtube</button>
+      <button className='btns' >GitHub</button>
 
-  )
+
+      </div>
+
+  );
 }
 
 
@@ -35,3 +41,4 @@ export default function Test() {
 
 
 
+export default Test
