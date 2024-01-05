@@ -10,12 +10,13 @@ const DropdownMenu = () => {
     <div className='traverse'>
     
     
-    <button className='btns' >Home</button>
-    <button className='btns' >Blog</button>
-    <button className='btns' >Youtube</button>
-    <button className='btns' >GitHub</button>
+    <button className='btns' ><p style={{transform: "rotate(90deg)"}}>Home</p></button>
+    <button className='btns' ><p style={{transform: "rotate(90deg)"}}>Blog</p></button>
+    <button className='btns' ><p style={{transform: "rotate(90deg)" }}>More</p></button>
+    <button className='btns' ><p style={{transform: "rotate(90deg)",position: "relative",bottom:"9px"}}>GitHub</p></button>
 
 
+     
     </div>
   );
 };

@@ -6,23 +6,6 @@ import DropdownMenu from "../components/ddm";
   //transform: rotate(90deg);
   return (
     <content>
-
-      
-      <div className="Title">
-        <h1>
-          Welcome to Fruit-Cup
-        </h1>
-      </div>
-
-
-      <DropdownMenu/>
-
-
-       
-        
-
-
-
     </content>
   )
 }

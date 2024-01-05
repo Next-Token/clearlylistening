@@ -7,23 +7,3 @@
     
 }
 
-.traverse{
-    display: flex;
-    
-    
-    
-}
-
-
-.traverse button{
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.btns {
-    color: white;
-    background-color:  #f1356d;
-    width: 100%;
-    border-radius: 15px;
-
-}

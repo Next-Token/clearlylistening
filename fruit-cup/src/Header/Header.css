@@ -13,4 +13,30 @@
     width: 100px;
     height: 190px;
     background-color: rgba(172, 159, 159, 0.329);
+    
+}
+.traverse{
+    display: flex;
+    flex-direction: column;
+    color:rgb(126, 18, 214);
+    background-color: rgb(216, 119, 0);
+    position: fixed;
+    z-index: -10000;
+    height: 100%;
+    justify-content: start;
+    top: 200px;
+    
+    
+}
+
+
+.btns {
+    color: white;
+    background-color:  #f1356d;
+    border-radius: 15px;
+    width: 50%;
+    height: 15%;
+    font-size: 20px;
+
+    
 }
