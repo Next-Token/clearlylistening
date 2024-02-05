@@ -6,7 +6,9 @@ let CUR =0;
 let Count=0;
 let Offset=69;
 let Opacity =33;
-
+let Cap=30;
+const myMap = new Map();
+const myMap2 = new Map();
 
 let left = 0;
 const dist = 100;
@@ -44,6 +46,7 @@ function bowl(){
 
 export function Selc(a){
 
+    
     if (a ===0){
         console.log('Selc0');
         
@@ -99,8 +102,9 @@ export function Selc(a){
         return CUR
         
     }
-
 }
+
+
 
 
 function Lane() { 
@@ -108,7 +112,7 @@ function Lane() {
     // want handle 31st fruit click  (show hidden fruit? unlocks login page)
     // need sidebar still 
 
-    let selected = fruitMap.get(Selc());
+    let selected = fruitMap.get(Selc());// log which fruit was clicked
 
     
 
@@ -116,6 +120,20 @@ function Lane() {
         count=count+1;
         let adjust = Offset * count;
 
+        if (count >= 30){
+            for (const [key, value] of myMap) {
+                console.log(`${count} = ${value}`);
+            
+                //need to unrender the first item that was clicked. and pass the other 29 behind it to the 2nd map.
+                //then render the new in place of first
+                
+                
+                //1. un render current first
+                //2. render new first
+                //or
+                // set cap. give reset button
+            } 
+    }
         console.log('apple');   
         if(count <=30){     
 render(<div id='column' classname={count} style={{ 
@@ -132,7 +150,9 @@ render(<div id='column' classname={count} style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('apple-Style');}
+        console.log('apple-Style');
+        myMap.set(count, 'apple' );
+}
         else{
 
             console.log('full');
@@ -159,6 +179,8 @@ render(<div style={{
         position:'absolute'  }}> </div>);       
         console.log(count);
         console.log('banana-Style');
+        
+        myMap.set(count, 'banana' );
 }
 
 
@@ -184,6 +206,7 @@ render(<div style={{
         position:'absolute'  }}> </div>);       
         console.log(count);
         console.log('cherry-Style');
+        myMap.set(count, 'cherry' );
     }
     const handlegrape = () => {
         count=count+1;
@@ -205,7 +228,8 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('grape-Style');    }
+        console.log('grape-Style');
+        myMap.set(count, 'grape' );    }
     const handlelamon = () => {
         count=count+1;
         let adjust = Offset * count;
@@ -226,7 +250,8 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('lamon-Style');}
+        console.log('lamon-Style');
+        myMap.set(count, 'lamon' );}
     const handlemellon = () => {
         count=count+1;
         let adjust = Offset * count;
@@ -247,7 +272,8 @@ render(<div style={{
         left: `${adjust}px`,
         position:'absolute'  }}> </div>);       
         console.log(count);
-        console.log('mellon-Style');    }
+        console.log('mellon-Style');
+        myMap.set(count, 'mellon' );    }
     const handleorange = () => {
         count=count+1;
         let adjust = Offset * count;
@@ -269,6 +295,7 @@ render(<div style={{
         position:'absolute'  }}> </div>);       
         console.log(count);
         console.log('orange-Style');
+        myMap.set(count,'orange');
     }
     const handlepear = () => {
         count=count+1;
@@ -291,6 +318,8 @@ render(<div style={{
         position:'absolute'  }}> </div>);       
         console.log(count);
         console.log('pear-Style');
+        
+        myMap.set(count,'pear');
     }
     const handlepepper = () => {
         count=count+1;
@@ -313,6 +342,7 @@ render(<div style={{
         position:'absolute'  }}> </div>);       
         console.log(count);
         console.log('pepper-Style');
+        myMap.set(count,'pepper');
     }
     const handlestrawberry = () => {
         count=count+1;
@@ -335,6 +365,7 @@ render(<div style={{
         position:'absolute'  }}> </div>);       
         console.log(count);
         console.log('strawberry-Style');
+        myMap.set(count,'strawberry');
         
     }
 
