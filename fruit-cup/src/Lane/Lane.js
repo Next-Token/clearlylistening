@@ -121,15 +121,8 @@ function Lane() {
         count=count+1;
         let adjust = Offset * count;
 
-        if (count >= 30){
-            for (const [key, value] of myMap) {
-                console.log(`${key} = ${value}`);
-                console.log('Current: ' + myMap.get(Next));
-                myMap.delete(Next);
-                myMap.set(Next, 'apple')
-                Next += 1;
-                
-
+      //  if (count > 30){
+            
 
                 //need to unrender the first item that was clicked. and pass the other 29 behind it to the 2nd map.
                 //then render the new in place of first
@@ -139,10 +132,10 @@ function Lane() {
                 //2. render new first
                 //or
                 // set cap. give reset button
-            } 
-    }
+             
+   // }
         console.log('apple');   
-        if(count <=30){     
+        if(count <31){     
 render(<div id='column' classname={count} style={{ 
         backgroundImage: `url(./apple.png)`, 
         backgroundRepeat: 'repeat-y', 
@@ -162,7 +155,21 @@ render(<div id='column' classname={count} style={{
 }
         else{
 
-            console.log('full');
+            console.log('Initial Map FILLED');
+
+
+
+            for (const [key, value] of myMap) {
+                console.log(`${key} = ${value}`);
+                
+            }
+            
+            Next = count % 30;
+            console.log('Current: ' + myMap.get(Next));
+                myMap.delete(Next);
+                myMap.set(Next, 'apple');
+                count +=1;
+                
         }
     }
     const handleBanana = () => {
