@@ -7,6 +7,7 @@ let Count=0;
 let Offset=69;
 let Opacity =33;
 let Cap=30;
+let Next=1;
 const myMap = new Map();
 const myMap2 = new Map();
 
@@ -122,8 +123,14 @@ function Lane() {
 
         if (count >= 30){
             for (const [key, value] of myMap) {
-                console.log(`${count} = ${value}`);
-            
+                console.log(`${key} = ${value}`);
+                console.log('Current: ' + myMap.get(Next));
+                myMap.delete(Next);
+                myMap.set(Next, 'apple')
+                Next += 1;
+                
+
+
                 //need to unrender the first item that was clicked. and pass the other 29 behind it to the 2nd map.
                 //then render the new in place of first
                 
