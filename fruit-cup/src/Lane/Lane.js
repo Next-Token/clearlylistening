@@ -384,7 +384,7 @@ render(<div style={{
     }
 
   console.log(selected);
-  console.log('fional');
+  console.log('final');
     return <ul>
         <li>
             <img src='/apple.png' alt='0' className='bowling' onMouseDown={handleApple} />

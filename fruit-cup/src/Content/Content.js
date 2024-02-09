@@ -6,6 +6,11 @@ import DropdownMenu from "../components/ddm";
   //transform: rotate(90deg);
   return (
     <content>
+      <h1>Welcome!</h1>
+      <h4>I just want to make it easy for my friends to connect to my game servers.</h4>
+      <h5></h5>
+      
+      
     </content>
   )
 }
